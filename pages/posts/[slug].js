@@ -3,7 +3,7 @@ import ErrorPage from 'next/error';
 import Container from '../../components/layout/container';
 import PostBody from '../../components/post/post-body';
 import MoreStories from '../../components/post/more-stories';
-import Header from '../../components/head/header';
+import Header from '../../components/layout/header';
 import PostHeader from '../../components/post/post-header';
 import SectionSeparator from '../../components/general/section-separator';
 import Layout from '../../components/layout/layout';
@@ -32,7 +32,7 @@ export default function Post({ post, posts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title} | Bima Indra | Front End Engineer
                 </title>
                 <meta
                   property="og:image"

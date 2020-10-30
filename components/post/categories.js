@@ -4,12 +4,14 @@ export default function Categories({ categories }) {
       under
       {categories.edges.length > 0 ? (
         categories.edges.map((category, index) => (
-          <span key={index} className="ml-1">
-            {category.node.name}
-          </span>
+          <em>
+            <span key={index} className="ml-1 font-bold">
+              {category.node.name}
+            </span>
+          </em>
         ))
       ) : (
-        <span className="ml-1">{categories.edges.node.name}</span>
+        <em><span className="ml-1 font-bold">{categories.edges.node.name}</span></em>
       )}
     </span>
   )
